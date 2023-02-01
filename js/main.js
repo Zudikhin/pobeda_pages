@@ -76,6 +76,30 @@ $(document).ready(function () {
         ]
     });
 
+    $('.about_history_block_slider').slick({
+        dots: false,
+        infinite: false,
+        arrows: false,
+        autoplay: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 500,
+        cssEase: 'linear',
+        asNavFor: '.about_history_block_nav'
+    });
+
+    $('.about_history_block_nav').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        variableWidth: true,
+        asNavFor: '.about_history_block_slider',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        arrows: false
+      });
+
     $('.supplier_range_slider').slick({
         dots: false,
         infinite: true,
